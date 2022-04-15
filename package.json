@@ -43,6 +43,7 @@
     "test:cov": "jest --coverage",
     "build": "rm -rf ./dist && tsc && npm run build:index",
     "build:index": "rm -rf ./index.js ./index.d.ts && tsc -d --skipLibCheck ./index.ts",
+    "prepare": "npm run format && npm run build",
     "prepublish": "npm run format && npm run build"
   },
   "peerDependencies": {
